@@ -13,6 +13,12 @@ import Container from '@material-ui/core/Container';
 import Fab from '@material-ui/core/Fab';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import Zoom from '@material-ui/core/Zoom';
+import SignIn from './signIn'
+
+
+
+
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -62,25 +68,24 @@ ScrollTop.propTypes = {
 };
 
 export default function Header(props) {
-  const classes = useStyles()
+
   return (
     <React.Fragment>
       <CssBaseline />
       
       <AppBar>
-        <Toolbar>
+        <Toolbar  >
         
           <Typography variant="h5">DevelopDreams</Typography>
-          <Button variant = "h6" >Want to Organise a Hackathon?</Button>
-          <Button variant = "h6" >Sign In</Button>
-          <Button variant = "h6" >Sign Up</Button>
+          <Button  variant = "h6" style = {{color:"white", marginLeft:"800px"}} >Want to Organise a Hackathon?</Button>
+          <SignIn />
+          <Button variant = "h6" style = {{color:"white"}} >Sign Up</Button>
 
         </Toolbar>
-      
-  
-        
-        
       </AppBar>
+
+      
+      
       
       <Toolbar id="back-to-top-anchor" />
       <Container>
