@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DevelopDreams</string>
+    <string name="sign_in_with_google">Sign In With Google</string>
 </resources>
