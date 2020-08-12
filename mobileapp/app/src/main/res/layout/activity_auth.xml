@@ -7,7 +7,7 @@
     android:layout_gravity="center"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".AuthActivity">
+    tools:context=".activities.AuthActivity">
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnAuthGoogle"
