@@ -13,7 +13,8 @@ import Container from '@material-ui/core/Container';
 import Fab from '@material-ui/core/Fab';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import Zoom from '@material-ui/core/Zoom';
-import SignIn from './Login/signIn'
+import SignIn from './signIn'
+import { Link } from 'react-router-dom';
 
 
 
@@ -28,6 +29,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
 }));
+
 
 function ScrollTop(props) {
   const { children, window } = props;
@@ -67,8 +69,11 @@ ScrollTop.propTypes = {
   window: PropTypes.func,
 };
 
-export default function Header(props) {
 
+
+
+function Loginhome(props) {
+    
   return (
     <React.Fragment>
       <CssBaseline />
@@ -78,8 +83,12 @@ export default function Header(props) {
         
           <Typography variant="h5">DevelopDreams</Typography>
           <Button  variant = "h6" style = {{color:"white", marginLeft:"800px"}} >Want to Organise a Hackathon?</Button>
-          <SignIn />
-          <Button variant = "h6" style = {{color:"white"}} >Sign Up</Button>
+        
+          <Link to="/login"> 
+          <Button variant = "primary" style={{color:"white"}}>
+              Sign In
+          </Button>
+          </Link> 
 
         </Toolbar>
       </AppBar>
@@ -105,3 +114,5 @@ export default function Header(props) {
     </React.Fragment>
   );
 }
+
+export default Loginhome;

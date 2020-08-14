@@ -1,7 +1,10 @@
 import React from 'react';
 import firebase from 'firebase'
-import fire from '../config/fire';
-import { Grid, Button } from '@material-ui/core';
+import fire from '../../config/fire';
+import { Grid, Button, Divider } from '@material-ui/core';
+import GoogleButton from 'react-google-button';
+import Typography from '@material-ui/core/Typography';
+
 
 const SignIn = (props) => {
 
@@ -27,8 +30,11 @@ const SignIn = (props) => {
 
     return (
         <Grid>
-        <Button onClick = {handle_click} variant = "h6" style = {{color:"white"}}>Sign In</Button>
-        
+        <Typography component="h1" variant="h5" style={{display: "flex", justifyContent: "center",alignItems:"center",paddingBottom:"20px"}}>
+          OR
+        </Typography>
+       
+          <GoogleButton onClick={handle_click} style={{}} />
         </Grid>
     )
 }
