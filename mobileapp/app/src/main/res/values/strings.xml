@@ -1,4 +1,9 @@
 <resources>
-    <string name="app_name">DevelopDreams</string>
+    <string name="app_name">Develop Dreams</string>
     <string name="sign_in_with_google">Sign In With Google</string>
+    <string name="enter_email_address_for_verification">Enter Email Address for Verification</string>
+    <string name="use_your_email_id_to_login_to_your_account">Use your Email ID to login to your account.</string>
+    <string name="use_email">Use Email</string>
+    <string name="password">Password</string>
+    <string name="proceed">Proceed</string>
 </resources>

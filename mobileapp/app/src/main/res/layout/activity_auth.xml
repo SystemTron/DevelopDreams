@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -15,15 +15,110 @@
         android:id="@+id/cvContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
         android:layout_margin="15dp"
         app:cardBackgroundColor="@color/colorBackgroundGray"
         app:cardCornerRadius="15dp"
         app:cardElevation="15dp">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tvHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="42dp"
+                android:text="@string/enter_email_address_for_verification"
+                android:textColor="@color/colorText"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvHeadingDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvHeading"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/use_your_email_id_to_login_to_your_account"
+                android:textColor="@color/colorText"
+                android:textSize="16sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvHeadingDesc"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="55dp"
+                android:layout_marginEnd="12dp"
+                android:textColorHint="@color/colorText"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBackgroundGray"
+                    android:backgroundTint="@color/colorBackgroundGray"
+                    android:hint="@string/use_email"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="0dp"
+                    android:textColor="@color/colorText"
+                    android:textColorHighlight="@color/colorAccent"
+                    android:textSize="16sp"
+                    tools:ignore="RtlSymmetry" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etEmail"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="12dp"
+                android:textColorHint="@color/colorText"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/colorAccent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBackgroundGray"
+                    android:backgroundTint="@color/colorBackgroundGray"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:paddingStart="0dp"
+                    android:textColor="@color/colorText"
+                    android:textColorHighlight="@color/colorAccent"
+                    android:textSize="16sp"
+                    tools:ignore="RtlSymmetry" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etPassword"
+                android:layout_marginTop="30dp"
+                android:text="@string/proceed"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                app:cornerRadius="25dp" />
+        </RelativeLayout>
+
     </com.google.android.material.card.MaterialCardView>
 
-</RelativeLayout>
+</FrameLayout>

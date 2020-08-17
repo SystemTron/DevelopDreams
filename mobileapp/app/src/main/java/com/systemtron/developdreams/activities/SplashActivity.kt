@@ -30,7 +30,7 @@ class SplashActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         Log.d(splashTAG, "Handler destroyed")
-        splashHandler!!.removeCallbacks(mIntentHandler)
+//        splashHandler!!.removeCallbacks(mIntentHandler)
         super.onDestroy()
     }
 
