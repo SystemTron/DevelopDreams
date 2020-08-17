@@ -63,8 +63,7 @@
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="55dp"
                 android:layout_marginEnd="12dp"
-                android:textColorHint="@color/colorText"
-                app:errorEnabled="true">
+                android:textColorHint="@color/colorText">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
@@ -109,14 +108,50 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnProceed"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/etPassword"
                 android:layout_marginTop="30dp"
                 android:text="@string/proceed"
                 android:textAllCaps="false"
+                android:textColor="@color/colorText"
                 android:textSize="20sp"
                 app:cornerRadius="25dp" />
+
+            <TextView
+                android:id="@+id/tvOR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnProceed"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="35dp"
+                android:gravity="center"
+                android:letterSpacing="0.1"
+                android:text="@string/or"
+                android:textColor="@color/colorText"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/btnGoogle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvOR"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentBottom=""
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="42dp"
+                android:backgroundTint="@android:color/white"
+                android:drawableStart="@drawable/googleg_standard_color_18"
+                android:text="@string/google"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
         </RelativeLayout>
 
     </com.google.android.material.card.MaterialCardView>

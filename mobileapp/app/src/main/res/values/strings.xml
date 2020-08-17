@@ -6,4 +6,6 @@
     <string name="use_email">Use Email</string>
     <string name="password">Password</string>
     <string name="proceed">Proceed</string>
+    <string name="or">OR</string>
+    <string name="google">Google</string>
 </resources>

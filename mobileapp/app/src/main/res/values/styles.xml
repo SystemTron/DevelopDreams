@@ -16,4 +16,8 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
 
+    <style name="buttonRound">
+        <item name="cornerRadius">25dp</item>
+    </style>
+
 </resources>
