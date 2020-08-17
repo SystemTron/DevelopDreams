@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:backgroundTint="@color/colorBackground"
     tools:context=".activities.SplashActivity">
 
     <TextView
@@ -15,7 +17,7 @@
         android:layout_alignParentBottom="true"
         android:gravity="center"
         android:text="@string/app_name"
-        android:textColor="?android:attr/textColorPrimary"
+        android:textColor="@color/colorText"
         android:textSize="30sp" />
 
 </RelativeLayout>

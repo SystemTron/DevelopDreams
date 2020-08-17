@@ -9,7 +9,7 @@ import com.systemtron.developdreams.R
 import com.systemtron.developdreams.utils.Constants.Companion.splashTAG
 
 class SplashActivity : AppCompatActivity() {
-    private val SPLASH_DELAY: Long = 3000
+    private val SPLASH_DELAY: Long = 5000
     private var splashHandler: Handler? = null
     private val mIntentHandler = Runnable {
         if (!isFinishing) {
