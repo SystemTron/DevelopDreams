@@ -9,7 +9,7 @@
     android:backgroundTint="@color/colorBackground"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".activities.AuthActivity">
+    tools:context=".auth.SignInActivity">
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cvContainer"
@@ -141,7 +141,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tvOR"
                 android:layout_marginTop="30dp"
-                android:layout_alignParentBottom=""
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginBottom="42dp"

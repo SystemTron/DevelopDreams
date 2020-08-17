@@ -1,11 +1,11 @@
-package com.systemtron.developdreams.activities
+package com.systemtron.developdreams
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.util.Log
-import com.systemtron.developdreams.R
+import com.systemtron.developdreams.activities.HomeActivity
 import com.systemtron.developdreams.utils.Constants.Companion.splashTAG
 
 class SplashActivity : AppCompatActivity() {
@@ -14,7 +14,7 @@ class SplashActivity : AppCompatActivity() {
     private val mIntentHandler = Runnable {
         if (!isFinishing) {
             Log.d(splashTAG, "From SplashActivity -> AuthActivity")
-            val intent = Intent(this, AuthActivity::class.java)
+            val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
             finish()
         }

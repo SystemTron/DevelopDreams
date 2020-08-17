@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorBackground"
     android:backgroundTint="@color/colorBackground"
-    tools:context=".activities.SplashActivity">
+    tools:context=".SplashActivity">
 
     <TextView
         android:id="@+id/tvAppName"
